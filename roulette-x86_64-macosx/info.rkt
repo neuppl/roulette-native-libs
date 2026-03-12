@@ -7,7 +7,7 @@
 (define pkg-desc "native libraries for \"roulette\" on \"x86_64-macosx\"")
 (define pkg-authors '(camoy))
 
-(define install-platform "x86_64-macosx")
+(define install-platform #rx"^x86_64-((macosx)|(darwin))$")
 (define copy-foreign-libs '("librsdd.dylib"))
 
 (define license 'MIT)
